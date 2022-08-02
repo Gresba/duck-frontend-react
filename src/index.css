@@ -6,6 +6,17 @@ body{
 header{
     background-color: #2B2A2A;
     color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.icon{
+    padding: 15px 30px;
+    font-size: 20px;
+}
+
+div.icon:hover{
+    cursor: pointer;
 }
 
 h1{
