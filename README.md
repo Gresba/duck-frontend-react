@@ -1,1 +1,1 @@
-# duck-frontend-react
+# Duck Front-End React UI-Pattern
