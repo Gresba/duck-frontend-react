@@ -55,3 +55,33 @@ ul>li{
 ul>li:hover{
     cursor: pointer;
 }
+
+div.image-div{
+    position: absolute;
+    width: 100%;
+}
+
+div.container{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px auto;
+    background-color: gray;
+}
+
+div.container>h3{
+    margin: auto;
+    width: 400px;
+    background-color: #2B2A2A;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+div.container>img{
+    margin: auto;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+}

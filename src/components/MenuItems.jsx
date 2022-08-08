@@ -1,19 +1,15 @@
 function MenuItem(props) 
 {
-    let counter = 1;
-
-    const getDogName = (url) => {
-        let urlArr = url.split("/");
-        return urlArr[4];
+    const clickHandler = (e) => {
+        console.log(e.target.image)
+        props.setImageUrl(e.target.dataset.image)
     }
-    
+
     return (
         <ul>
-            {console.log("Props")}
-            {console.log(props.pictures)}
             {props.pictures.map(picture => { 
                 console.log(picture)
-                return <li>{picture}</li>
+                return <li onClick={clickHandler} data-image={picture}>{picture.split("/")[4]}</li>
             })}
         </ul>
     );
