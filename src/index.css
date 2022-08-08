@@ -8,14 +8,15 @@ header{
     color: white;
     display: flex;
     justify-content: space-between;
+    border-bottom: gray 1px solid;
 }
 
-div.icon{
+div.menu-icon, div.exit-icon{
     padding: 15px 30px;
     font-size: 20px;
 }
 
-div.icon:hover{
+div.menu-icon:hover{
     cursor: pointer;
 }
 
@@ -24,4 +25,33 @@ h1{
     padding: 15px 30px;
     font-size: 20px;
     font-weight: normal;
+}
+
+.hidden{
+    display: none;
+}
+
+div.menu{
+    position: absolute;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #2B2A2A;
+}
+
+ul{
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul>li{
+    padding: 20px 30px;
+    border-bottom: 1px gray solid;
+    width: 80%;
+}
+
+ul>li:hover{
+    cursor: pointer;
 }
